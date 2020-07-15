@@ -1,0 +1,22 @@
+<div>
+    <h3><u>Questions List</u></h3>
+    <table border="1px">
+        
+        <tr *ngFor="let question of questionsList">
+            <table>
+                <tr>
+            <td>{{question.questionname}}</td>
+                </tr>
+            <tr>
+                <input type="radio" value="1" name="{{question.qid}}" [(ngModel)]="question.chosenAnswer" > {{question.optiona}}
+                <input type="radio" value="2" name="{{question.qid}}" [(ngModel)]="question.chosenAnswer" > {{question.optionb}}
+            </tr>
+            </table>
+        </tr>
+        
+
+    </table><button (click)="startQuiz()">Submit</button>
+    
+</div>
+
+

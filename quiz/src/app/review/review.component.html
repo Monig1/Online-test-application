@@ -1,0 +1,22 @@
+<div>
+    <h2>Quiz Review</h2>
+    <table border="1px">
+        <tr>
+            <td>Question</td>
+            <td>Correct Answer</td>
+            <td>Chosen Answer</td>
+        </tr>
+        <tr *ngFor="let question of questionsList">
+                <td>{{question.questionname}}</td>
+                <td *ngIf="question.correctAnswer == 1">{{question.optiona}}</td>
+                <td *ngIf="question.correctAnswer == 2">{{question.optionb}}</td>
+                <td *ngIf="question.chosenAnswer == 1">{{question.optiona}}</td>
+                <td *ngIf="question.chosenAnswer == 2">{{question.optionb}}</td>
+                
+                
+                
+        </tr>   
+    </table>
+    <p>Your score is {{score}}</p>
+</div>
+

@@ -1,0 +1,16 @@
+<div align="center">
+<h3>QUIZ RESULT</h3>
+<br/>
+<br/>
+<table border="1px">
+  <tr>
+    <td>Attempt Number</td>
+    <td>Score</td>
+  </tr>
+    <tr *ngFor="let attempt of attemptList">
+     <td>{{attempt.aid}}</td>
+     <td>{{attempt.score}}</td>
+    </tr>
+</table>
+</div>
+

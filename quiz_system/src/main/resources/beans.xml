@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="h1" class="com.quiz.model.Questionmodel" lazy-init="true" scope="prototype">
+		<constructor-arg name="questionname"
+			value="What does HTML stand for?"></constructor-arg>
+			<constructor-arg name="optiona"
+			value="Home Tool Markup Language"></constructor-arg>
+			<constructor-arg name="optionb"
+			value="HyperText Markup Language"></constructor-arg>
+			<constructor-arg name="correctanswer"
+			value="2"></constructor-arg>
+	</bean>
+	
+<!-- 	<bean id="h2" class="com.demo.model.Hello"> -->
+<!-- 		<constructor-arg name="message" -->
+<!-- 			value="Hello World from Spring constructor style"></constructor-arg> -->
+<!-- 	</bean> -->
+</beans>
